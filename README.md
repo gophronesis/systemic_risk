@@ -1,6 +1,6 @@
 # systemic_risk
 
-Estimate systematic liquidity in the market using only close and volume data
+Estimate systematic liquidity in the market using only close and volume data:
 https://www.financialresearch.gov/working-papers/files/OFRwp-2015-11_Systemwide-Commonalities-in-Market-Liquidity.pdf
 
 
@@ -10,17 +10,17 @@ https://www.financialresearch.gov/working-papers/files/OFRwp-2015-11_Systemwide-
 
 * See [requirement.txt](requirement.txt)
 
-### Installing
+### Installation
 
 ```
-pip install systemic-risk
+pip install systemic_risk
 ```
 or
 ```
-pip install -U systemic-risk
+pip install -U systemic_risk
 ```
 
-### Executing program
+### Example
 
 ```
 import yfinance as yf
