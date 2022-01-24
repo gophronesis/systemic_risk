@@ -1,3 +1,20 @@
+Metadata-Version: 2.1
+Name: systemic-risk
+Version: 0.0.3
+Summary: A package for calculating systemic risk in the market
+Home-page: https://github.com/gophronesis/systemic_risk
+Author: Flynn Chen
+Author-email: flynn.chen@yale.edu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/gophronesis/systemic_risk/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # systemic_risk
 
 Estimate systematic liquidity in the market using only close and volume data
@@ -40,3 +57,5 @@ Flynn Chen (flynn dot chen AT yale dot edu)
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details
+
+
