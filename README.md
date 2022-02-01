@@ -34,8 +34,12 @@ obj.fit_transform()
 
 ## Authors
 
-Flynn Chen (flynn dot chen AT yale dot edu)
-
+Flynn Chen
+Daniel Rodriguez
+Sony Wicaksono
+Doris Schioberg
+Devon Cross
+William Casey King
 
 ## License
 

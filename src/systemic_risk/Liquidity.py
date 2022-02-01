@@ -1,4 +1,4 @@
-# Copyright @ 2021 Flynn Chen. All rights reserved.
+# Copyright @ 2021 Phronesis. All rights reserved.
 
 import numpy as np
 import pandas as pd
