@@ -52,7 +52,7 @@ class BrownianBridgeSim():
     def simulate(self):
         
         # Simulate a standard brownian motion
-        self.simulated_data = self.sample_path_batch(M, N).T
+        self.simulated_data = self.sample_path_batch(self.M, self.N).T
         
         # Rescale
         prior_std = self.rolling_std.to_numpy().flatten()
@@ -62,11 +62,11 @@ class BrownianBridgeSim():
         # Shift
         start_price = self.data.iloc[0:-1, :].to_numpy().flatten()
         end_price = self.data.iloc[1:, :].to_numpy().flatten()
-        slope_per_step = (end_price - start_price) / N # Expected increase every step
+        slope_per_step = (end_price - start_price) / self.N # Expected increase every step
         slope_all_steps = np.cumsum(np.ones(self.simulated_data.shape) * slope_per_step, axis=0) # Accumulated increase up to that step
         self.simulated_data += slope_all_steps
         self.simulated_data += start_price
-        self.simulated_data = self.simulated_data.reshape(N, (self.data.shape[0] - 1), self.data.shape[1])
+        self.simulated_data = self.simulated_data.reshape(self.N, (self.data.shape[0] - 1), self.data.shape[1])
         self.simulated_data = np.swapaxes(self.simulated_data,0,1)
-        self.simulated_data = self.simulated_data.reshape(N * (self.data.shape[0] - 1), self.data.shape[1])
+        self.simulated_data = self.simulated_data.reshape(self.N * (self.data.shape[0] - 1), self.data.shape[1])
         return self.simulated_data
