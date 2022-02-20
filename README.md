@@ -29,6 +29,10 @@ yf_df = yf.download('SPY, ^FTSE, ^N225', start='2003-01-01', end='2022-01-01')
 close, volume = yf_df["Close"].to_numpy(), yf_df["Volume"].to_numpy()
 obj = lq.Liquidity(close, volume)
 obj.fit_transform()
+
+from systemic_risk import BrownianBridgeSim as bbs
+simulated_data = bbs.BrownianBridgeSim(close).simulate()
+print(simulated_data.shape)
 ```
 
 
