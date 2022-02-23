@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: systemic-risk
-Version: 0.0.9
+Version: 0.0.10
 Summary: A package for calculating systemic risk in the market
 Home-page: https://github.com/gophronesis/systemic_risk
 Author: Flynn Chen

@@ -3,6 +3,7 @@ README.md
 pyproject.toml
 setup.cfg
 src/systemic_risk/BrownianBridgeSim.py
+src/systemic_risk/BrownianBridgeSimStoVol.py
 src/systemic_risk/Liquidity.py
 src/systemic_risk/__init__.py
 src/systemic_risk.egg-info/PKG-INFO
